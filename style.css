@@ -1,0 +1,111 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+h1{
+    color: white;
+}
+.container{
+    display: grid;
+    width: 900px;
+grid-template-columns: 300px 300px 300px;
+grid-template-rows: 500px;
+margin: 0 auto;
+}
+.sedans{
+    grid-column: 1/2;
+    grid-row: 1/2;
+    background-color: rgb(238, 106, 12);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 50px 30px 30px;
+}
+.suvs{
+    grid-column: 2/3;
+    grid-row: 1/2;
+    background-color: rgb(12, 169, 241);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 50px 30px 30px;
+
+
+}
+.luxury{
+    grid-column: 3/4;
+    grid-row: 1/2;
+    background-color: #055050;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 35px 50px 30px 30px;
+
+}
+a{
+    background-color: white;
+    width: 150px;
+    padding: 10px;
+    text-align: center;
+    border-radius: 30px;
+}
+img{
+    width: 80px;
+}
+p{
+    font-size: 16px;
+   
+}
+.button-sedans{
+    color: rgb(238, 112, 28);
+}
+.button-suvs{
+    color: rgb(41, 241, 221);
+}
+.button-luxury{
+    color: rgb(4, 54, 54);
+}
+.button-sedans :hover{
+    background-color: rgb(235, 142, 35);
+    color: white;
+    box-sizing: solid 2px white;
+}
+.button-suvs :hover{
+    background-color: turquoise;
+    color: white;
+    box-sizing: solid 2px white;
+}
+.button-luxury :hover{
+    background-color: rgb(2, 34, 34);
+    color: white;
+    box-sizing: solid 2px white;
+
+}
+
+
+
+@media (max-width:800px){
+    .container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 100%;
+        grid-template-rows: 500px 500px 500px;
+    }
+    .sedans{
+        grid-column: 1/2;
+        grid-row: 1/2;
+    }
+    .suvs{
+        grid-column: 1/2;
+        grid-row: 2/3; 
+    }
+    .luxury{
+        grid-column: 1/2;
+        grid-row: 3/4; 
+    }
+
+}
